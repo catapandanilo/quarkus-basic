@@ -8,18 +8,10 @@ import javax.ws.rs.core.MediaType;
 @Path("/hello-resteasy")
 public class GreetingResource {
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hello RESTEasy";
-    }
-    
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    @Path("category")
-    public Category category() {
-    	Category category = new Category();
-    	category.setName("Danilo");
-        return category;
-    }
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String hello() {
+		return "Hello RESTEasy";
+	}
+
 }
