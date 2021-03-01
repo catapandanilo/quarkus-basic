@@ -13,4 +13,13 @@ public class GreetingResource {
     public String hello() {
         return "Hello RESTEasy";
     }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("category")
+    public Category category() {
+    	Category category = new Category();
+    	category.setName("Danilo");
+        return category;
+    }
 }
